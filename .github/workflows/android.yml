@@ -26,6 +26,8 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x ./Source/Android/gradlew
+    - name: Accept the SDK license
+      run: sdkmanager --licenses
     - name: Build with Gradle
       run: cd Source/Android && ./gradlew assemble
     - name: Upload a Build Artifact
