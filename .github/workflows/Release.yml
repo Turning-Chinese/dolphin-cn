@@ -1,0 +1,60 @@
+name: Android Release
+
+on:
+    workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: gradle
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+      with:
+        cmdline-tools-version: 11076708
+        accept-android-sdk-licenses: true
+    - name: pull submodules before building
+      run: git submodule update --init --recursive
+    - name: Grant execute permission for gradlew
+      run: chmod +x ./Source/Android/gradlew
+    - name: Accept the SDK license
+      run: sdkmanager --licenses
+    - name: Setting Version Name
+      run: sed -i '1,90s/getGitVersion()/1.0.${{ github.run_number }}/g' ./Source/Android/app/build.gradle.kts
+    - name: Build with Gradle
+      run: cd Source/Android && ./gradlew assemble
+    - name: Sign Release APK
+      uses: kevin-david/zipalign-sign-android-release@v1.1
+      with: 
+        releaseDirectory: Source/Android/app/build/outputs/apk/release
+        signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+        alias: ${{ secrets.ALIAS }}
+        keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+        keyPassword: ${{ secrets.KEY_PASSWORD }}
+        zipAlign: true
+    - name: Sign Debug APK
+      uses: kevin-david/zipalign-sign-android-release@v1.1
+      with: 
+        releaseDirectory: Source/Android/app/build/outputs/apk/debug
+        signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+        alias: ${{ secrets.ALIAS }}
+        keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+        keyPassword: ${{ secrets.KEY_PASSWORD }}
+        zipAlign: true
+    - name: Delete Unsign APK
+      run: rm -rf Source/Android/app/build/outputs/apk/release/app-release-unsigned.apk && rm -rf Source/Android/app/build/outputs/apk/debug/app-debug.apk
+    - name: Release APK
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "Source/Android/app/build/outputs/apk/release/app-release-unsigned-signed.apk"
+        allowUpdates: true
+        body: "若要查看中文版更新日志，请转到www.example.com"
+        tag: 1.0.${{ github.run_number }}
