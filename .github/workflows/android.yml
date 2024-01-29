@@ -66,7 +66,7 @@ jobs:
       uses: actions/upload-artifact@v4.3.0
       with:
         name: Debug # optional, default is artifact
-        path: Source/Android/app/build/outputs/apk/release/app-debug-signed.apk
+        path: Source/Android/app/build/outputs/apk/debug/app-debug-signed.apk
     # Duration after which artifact will expire in days. 0 means using default retention.
     # The level of compression for Zlib to be applied to the artifact archive. The value can range from 0 to 9: - 0: No compression - 1: Best speed - 6: Default compression (same as GNU Gzip) - 9: Best compression Higher levels will result in better compression, but will take longer to complete. For large files that are not easily compressed, a value of 0 is recommended for significantly faster uploads.
 
