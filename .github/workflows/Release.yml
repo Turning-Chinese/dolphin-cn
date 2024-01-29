@@ -28,7 +28,7 @@ jobs:
     - name: Accept the SDK license
       run: sdkmanager --licenses
     - name: Setting Version Name
-      run: sed -i '1,90s/getGitVersion()/1.0.${{ github.run_number }}/g' ./Source/Android/app/build.gradle.kts
+      run: sed -i '1,90s/getGitVersion()/\"1.0.${{ github.run_number }}\"/g' ./Source/Android/app/build.gradle.kts
     - name: Build with Gradle
       run: cd Source/Android && ./gradlew assemble
     - name: Sign Release APK
