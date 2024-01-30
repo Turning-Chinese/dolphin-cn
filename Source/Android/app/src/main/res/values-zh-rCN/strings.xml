@@ -490,202 +490,200 @@
     <string name="properties_edit_cheats">编辑作弊</string>
     <string name="properties_clear_game_settings">清除游戏设置和作弊</string>
     <string name="properties_clear_game_settings_confirmation">你确定要删除此游戏的所有游戏特定设置和作弊吗？</string>
-    <string name="properties_clear_success">Cleared settings for %1$s</string>
-    <string name="properties_clear_failure">Unable to clear settings for %1$s</string>
-    <string name="properties_clear_missing">No game settings to delete</string>
-    <string name="preferences_save_exit">Save and Exit</string>
-    <string name="preferences_game_properties">Game Properties</string>
-    <string name="preferences_game_properties_with_game_id">Game Properties: %1$s</string>
-    <string name="game_ini_junk_title">Junk Data Found</string>
-    <string name="game_ini_junk_question">The settings file for this game contains extraneous data added by an old version of Dolphin. This will likely prevent global settings from working as intended.\n\nWould you like to fix this by deleting the settings file for this game? All game-specific settings and cheats that you have added will be removed. This cannot be undone.</string>
+    <string name="properties_clear_success">已清除%1$s的设置</string>
+    <string name="properties_clear_failure">无法清除%1$s的设置</string>
+    <string name="properties_clear_missing">没有可删除的游戏设置</string>
+    <string name="preferences_save_exit">保存并退出</string>
+    <string name="preferences_game_properties">游戏属性</string>
+    <string name="preferences_game_properties_with_game_id">游戏属性：%1$s</string>
+    <string name="game_ini_junk_title">发现垃圾数据</string>
+    <string name="game_ini_junk_question">此游戏的设置文件包含由旧版本的Dolphin添加的无关数据。这可能会阻止全局设置按预期工作。\n\n是否要通过删除此游戏的设置文件来解决此问题？您添加的所有游戏特定设置和作弊都将被删除。这是无法撤消的。</string>
 
     <!-- Game Details Screen -->
-    <string name="game_details_country">Country</string>
-    <string name="game_details_company">Company</string>
-    <string name="game_details_game_id">Game ID</string>
-    <string name="game_details_revision">Revision</string>
-    <string name="game_details_file_size">File Size</string>
-    <string name="game_details_file_format">File Format</string>
-    <string name="game_details_compression">Compression</string>
-    <string name="game_details_block_size">Block Size</string>
-    <string name="game_details_no_compression">No Compression</string>
+    <string name="game_details_country">国家</string>
+    <string name="game_details_company">公司</string>
+    <string name="game_details_game_id">游戏ID</string>
+    <string name="game_details_revision">修订</string>
+    <string name="game_details_file_size">文件大小</string>
+    <string name="game_details_file_format">文件格式</string>
+    <string name="game_details_compression">压缩</string>
+    <string name="game_details_block_size">块大小</string>
+    <string name="game_details_no_compression">无压缩</string>
     <string name="game_details_size_and_format">%1$s (%2$s)</string>
 
     <!-- Cheats Screen -->
-    <string name="cheats">Cheats</string>
-    <string name="cheats_with_game_id">Cheats: %1$s</string>
+    <string name="cheats">金手指</string>
+    <string name="cheats_with_game_id">C金手指: %1$s</string>
     <string name="cheats_header_ar">AR Codes</string>
     <string name="cheats_header_gecko">Gecko Codes</string>
-    <string name="cheats_header_patch">Patches</string>
-    <string name="cheats_header_graphics_mod">Graphics Mods</string>
-    <string name="cheats_add_ar">Add New AR Code</string>
-    <string name="cheats_add_gecko">Add New Gecko Code</string>
-    <string name="cheats_add_patch">Add New Patch</string>
-    <string name="cheats_download_gecko">Download Gecko Codes</string>
-    <string name="cheats_name">Name</string>
-    <string name="cheats_creator">Creator</string>
-    <string name="cheats_notes">Notes</string>
+    <string name="cheats_header_patch">补丁</string>
+    <string name="cheats_header_graphics_mod">图形模组</string>
+    <string name="cheats_add_ar">添加新的AR Code</string>
+    <string name="cheats_add_gecko">添加新的Gecko Code</string>
+    <string name="cheats_add_patch">添加新的Patch</string>
+    <string name="cheats_download_gecko">下载Gecko Codes</string>
+    <string name="cheats_name">名字</string>
+    <string name="cheats_creator">作者</string>
+    <string name="cheats_notes">说明</string>
     <string name="cheats_code">Code</string>
-    <string name="cheats_edit">Edit</string>
-    <string name="cheats_delete">Delete</string>
-    <string name="cheats_delete_confirmation">Are you sure you want to delete "%1$s"?</string>
-    <string name="cheats_error_no_name">Name can\'t be empty</string>
-    <string name="cheats_error_no_code_lines">Code can\'t be empty</string>
-    <string name="cheats_error_on_line">Error on line %1$d</string>
-    <string name="cheats_error_mixed_encryption">Lines must either be all encrypted or all decrypted</string>
-    <string name="cheats_downloading">Downloading…</string>
-    <string name="cheats_download_failed">Failed to download codes.</string>
-    <string name="cheats_download_empty">File contained no codes.</string>
-    <string name="cheats_download_succeeded">Downloaded %1$d codes. (added %2$d)</string>
-    <string name="cheats_disabled_warning">Dolphin\'s cheat system is currently disabled.</string>
-    <string name="gfx_mods_disabled_warning">Graphics mods are currently disabled.</string>
-    <string name="cheats_open_settings">Settings</string>
+    <string name="cheats_edit">退出</string>
+    <string name="cheats_delete">删除</string>
+    <string name="cheats_delete_confirmation">您确定要删除“%1$s”吗？</string>
+    <string name="cheats_error_no_name">名称不能为空</string>
+    <string name="cheats_error_no_code_lines">码不能为空</string>
+    <string name="cheats_error_on_line">第%1$d行出现错误</string>
+    <string name="cheats_error_mixed_encryption">行必须全部加密或全部解密</string>
+    <string name="cheats_downloading">下载中…</string>
+    <string name="cheats_download_failed">下载失败.</string>
+    <string name="cheats_download_empty">文件不包含任何代码。</string>
+    <string name="cheats_download_succeeded">已下载%1$d个代码。（添加了%2$d）</string>
+    <string name="cheats_disabled_warning">Dolphin的作弊系统当前被禁用。</string>
+    <string name="gfx_mods_disabled_warning">图形模组当前已禁用。</string>
+    <string name="cheats_open_settings">设置</string>
 
     <!-- Convert Screen -->
-    <string name="convert_format">Format</string>
-    <string name="convert_block_size">Block Size</string>
-    <string name="convert_compression">Compression</string>
-    <string name="convert_compression_level">Compression Level</string>
-    <string name="convert_remove_junk_data">Remove Junk Data (Irreversible)</string>
-    <string name="convert_convert">Convert</string>
-    <string name="convert_converting">Converting</string>
-    <string name="convert_warning_iso">Removing junk data does not save any space when converting to ISO (unless you package the ISO file in a compressed file format such as ZIP afterwards). Do you want to continue anyway?</string>
-    <string name="convert_warning_gcz">Converting Wii disc images to GCZ without removing junk data does not save any noticeable amount of space compared to converting to ISO. Do you want to continue anyway?</string>
-    <string name="convert_warning_nkit">Dolphin can\'t convert NKit files to non-NKit files. Converting an NKit file in Dolphin will result in another NKit file.\n\nIf you want to convert an NKit file to a non-NKit file, you can use the same program as you originally used when converting the file to the NKit format.\n\nDo you want to continue anyway?</string>
-    <string name="convert_success_message">The disc image was successfully converted.</string>
-    <string name="convert_failure_message">Dolphin failed to complete the requested action.</string>
+    <string name="convert_format">格式</string>
+    <string name="convert_block_size">块大小</string>
+    <string name="convert_compression">压缩</string>
+    <string name="convert_compression_level">压缩等级</string>
+    <string name="convert_remove_junk_data">删除垃圾数据（不可逆）</string>
+    <string name="convert_convert">转换</string>
+    <string name="convert_converting">转换中</string>
+    <string name="convert_warning_iso">在转换为ISO时，删除垃圾数据不会节省任何空间（除非之后将ISO文件打包为压缩文件格式（如ZIP））。是否仍要继续？</string>
+    <string name="convert_warning_gcz">与转换为ISO相比，在不删除垃圾数据的情况下将Wii光盘映像转换为GCZ不会节省任何明显的空间。是否仍要继续？</string>
+    <string name="convert_warning_nkit">Dolphin无法将NKit文件转换为非NKit文件。在Dolphin中转换一个NKit文件将产生另一个NKit文件。\n\n如果要将NKit文件转换为非NKit文件，可以使用与将文件转换为NKit格式时最初使用的程序相同的程序。\n\n是否仍要继续？</string>
+    <string name="convert_success_message">光盘映像已成功转换。</string>
+    <string name="convert_failure_message">Dolphin未能完成请求的操作。</string>
     <string name="convert_format_info">
-ISO: A simple and robust format which is supported by many programs. It takes up more space
-than any other format.
-\n\nGCZ: A basic compressed format which is compatible with most versions of Dolphin and some
-other programs. It can\'t efficiently compress junk data (unless removed) or encrypted Wii data.
-\n\nWIA: An advanced compressed format which is compatible with Dolphin 5.0-12188 and later,
-and a few other programs. It can efficiently compress encrypted Wii data, but not junk data
-(unless removed).
-\n\nRVZ: An advanced compressed format which is compatible with Dolphin 5.0-12188 and later.
-It can efficiently compress both junk data and encrypted Wii data.
+ISO：一种简单的格式，受到许多程序的支持。它占用更多的空间而不是任何其他格式。
+\n\nGCZ：一种基本的压缩格式，与大多数版本的Dolphin和一些兼容其他程序。它不能有效地压缩垃圾数据
+（除非删除）或加密的Wii数据。
+\n\nWIA：一种高级压缩格式，兼容Dolphin 5.0-12188及更高版本，以及其他一些程序。
+它可以有效地压缩加密的Wii数据，但不能压缩垃圾数据（除非已移除）。
+\n\nRVZ：一种高级压缩格式，与Dolphin 5.0-12188及更高版本兼容。
+它可以有效地压缩垃圾数据和加密的Wii数据。
     </string>
 
     <!-- Riivolution Boot Screen -->
     <string name="riivolution_riivolution">Riivolution</string>
-    <string name="riivolution_sd_root">SD Root: %1$s</string>
-    <string name="riivolution_disabled">Disabled</string>
-    <string name="riivolution_start">Start</string>
+    <string name="riivolution_sd_root">SD根目录: %1$s</string>
+    <string name="riivolution_disabled">已关闭</string>
+    <string name="riivolution_start">开启</string>
 
     <!-- Emulation Menu -->
-    <string name="pause_emulation">Pause Emulation</string>
-    <string name="unpause_emulation">Unpause Emulation</string>
-    <string name="emulation_screenshot">Take Screenshot</string>
-    <string name="emulation_savestate">Save State</string>
-    <string name="emulation_loadstate">Load State</string>
-    <string name="emulation_exit">Exit Emulation</string>
-    <string name="emulation_state_slot">Slot %1$d\n\n%2$s</string>
-    <string name="emulation_state_slot_empty">Slot %1$d\n\nEmpty</string>
-    <string name="emulation_quicksave">Quick Save</string>
-    <string name="emulation_quickload">Quick Load</string>
-    <string name="emulation_refresh_wiimotes">Refresh Wii 遥控器s</string>
-    <string name="emulation_overlay_controls">Overlay Controls</string>
-    <string name="emulation_edit_layout">Edit Layout</string>
-    <string name="emulation_done">Done</string>
-    <string name="emulation_toggle_controls">Toggle Controls</string>
-    <string name="emulation_latching_controls">Latching Controls</string>
-    <string name="emulation_toggle_all">Toggle All</string>
-    <string name="emulation_control_scale">Scale</string>
-    <string name="emulation_control_opacity">Opacity</string>
-    <string name="emulation_control_adjustments">Adjust Controls</string>
-    <string name="emulation_control_joystick_rel_center">Relative Stick Center</string>
-    <string name="emulation_choose_controller">Choose Controller</string>
-    <string name="emulation_more_controller_settings">More Settings</string>
-    <string name="emulation_menu_help">Press Back to access the menu.\nLong press Back to exit emulation.</string>
-    <string name="emulation_touch_overlay_reset">Reset Overlay</string>
-    <string name="emulation_ir_group">Touch IR Pointer</string>
-    <string name="emulation_ir_recenter">Always recenter</string>
-    <string name="emulation_ir_mode">IR Mode</string>
-    <string name="emulation_ir_sensitivity">IR Sensitivity</string>
-    <string name="emulation_choose_doubletap">Double tap button</string>
+    <string name="pause_emulation">暂停模拟</string>
+    <string name="unpause_emulation">继续模拟</string>
+    <string name="emulation_screenshot">截个图</string>
+    <string name="emulation_savestate">保存状态</string>
+    <string name="emulation_loadstate">加载状态</string>
+    <string name="emulation_exit">退出模拟</string>
+    <string name="emulation_state_slot">插槽%1$d\n\n%2$s</string>
+    <string name="emulation_state_slot_empty">插槽%1$d\n\n空</string>
+    <string name="emulation_quicksave">快速保存</string>
+    <string name="emulation_quickload">快速读取</string>
+    <string name="emulation_refresh_wiimotes">刷新Wii遥控器</string>
+    <string name="emulation_overlay_controls">屏上控件</string>
+    <string name="emulation_edit_layout">编辑布局</string>
+    <string name="emulation_done">完成</string>
+    <string name="emulation_toggle_controls">切换控件</string>
+    <string name="emulation_latching_controls">锁定控件</string>
+    <string name="emulation_toggle_all">全部切换</string>
+    <string name="emulation_control_scale">大小</string>
+    <string name="emulation_control_opacity">不透明度</string>
+    <string name="emulation_control_adjustments">调整控制</string>
+    <string name="emulation_control_joystick_rel_center">相对杆中心</string>
+    <string name="emulation_choose_controller">选择控制器</string>
+    <string name="emulation_more_controller_settings">更多设置</string>
+    <string name="emulation_menu_help">按Back（上一步）进入菜单。\n长按返回退出模拟。</string>
+    <string name="emulation_touch_overlay_reset">重置屏上控件</string>
+    <string name="emulation_ir_group">触摸IR指针</string>
+    <string name="emulation_ir_recenter">始终重新居中</string>
+    <string name="emulation_ir_mode">IR模式</string>
+    <string name="emulation_ir_sensitivity">IR灵敏度</string>
+    <string name="emulation_choose_doubletap">双击按钮</string>
 
     <!-- GC Adapter Menu-->
-    <string name="gc_adapter_rumble">Enable Vibration</string>
-    <string name="gc_adapter_rumble_description">Enable the vibration function for this Gamecube控制器.</string>
-    <string name="gc_adapter_bongos">Bongo Controller</string>
-    <string name="gc_adapter_bongos_description">Enable this if you are using bongos on this port.</string>
+    <string name="gc_adapter_rumble">启用振动</string>
+    <string name="gc_adapter_rumble_description">启用此Gamecube控制器的振动功能控制器.</string>
+    <string name="gc_adapter_bongos">Bongo控制器</string>
+    <string name="gc_adapter_bongos_description">如果您在此端口上使用bongos，请启用此功能。</string>
 
-    <string name="path_not_changeable_scoped_storage">Due to the Scoped Storage policy in Android 11 and newer, you can\'t change this path.</string>
-    <string name="load_settings">Loading Settings…</string>
-    <string name="setting_not_runtime_editable">This setting can\'t be changed while a game is running.</string>
-    <string name="ipl_not_found">IPL not found</string>
-    <string name="setting_clear_info">Long press a setting to clear it.</string>
-    <string name="setting_clear_confirm">Do you want to restore this setting to its default value?</string>
-    <string name="setting_cleared">Setting cleared</string>
-    <string name="emulation_change_disc">Change Disc</string>
+    <string name="path_not_changeable_scoped_storage">由于Android 11及更新版本中的作用域存储策略，您无法更改此路径。</string>
+    <string name="load_settings">加载设定中…</string>
+    <string name="setting_not_runtime_editable">此设置在游戏运行时无法更改。</string>
+    <string name="ipl_not_found">找不到IPL</string>
+    <string name="setting_clear_info">长按设置以清除它。</string>
+    <string name="setting_clear_confirm">是否要将此设置还原为其默认值？</string>
+    <string name="setting_cleared">设定已清除</string>
+    <string name="emulation_change_disc">改变光盘</string>
 
-    <string name="external_storage_not_mounted">The external storage needs to be available in order to use Dolphin</string>
+    <string name="external_storage_not_mounted">需要提供外部存储权限才能使用Dolphin</string>
 
     <!-- Extra Leanback Homescreen Channels-->
-    <string name="homescreen_favorites">Favorites</string>
+    <string name="homescreen_favorites">置顶</string>
 
-    <string name="select_dir">Select This Directory</string>
+    <string name="select_dir">选择此目录</string>
 
     <!-- File Pickers -->
-    <string name="no_file_extension">The selected file does not appear to have a file name extension.\n\nContinue anyway?</string>
-    <string name="wrong_file_extension_single">The selected file has the file name extension \"%1$s\", but \"%2$s\" was expected.\n\nContinue anyway?</string>
-    <string name="wrong_file_extension_multiple">The selected file has the file name extension \"%1$s\", but one of these extensions was expected: %2$s\n\nContinue anyway?</string>
-    <string name="wrong_file_extension_in_directory">No compatible files were found in the selected location.\n\nThe supported formats are: %1$s</string>
-    <string name="unavailable_paths">Dolphin does not have permission to access one or more configured paths. Would you like to fix this before starting?</string>
+    <string name="no_file_extension">所选文件似乎没有文件扩展名。\n\n是否继续？</string>
+    <string name="wrong_file_extension_single">所选文件的文件扩展名为“%1$s”，但应为“%2$s”。\n\n是否继续？</string>
+    <string name="wrong_file_extension_multiple">所选文件的文件扩展名为“%1$s”，但需要其中一个扩展名：%2$s \n\n是否继续？</string>
+    <string name="wrong_file_extension_in_directory">在所选位置找不到兼容的文件。\n\n支持的格式为：%1$s</string>
+    <string name="unavailable_paths">Dolphin没有访问一个或多个已配置路径的权限。你想在开始之前解决这个问题吗？</string>
 
     <!-- Misc -->
-    <string name="enabled">Enabled</string>
-    <string name="default_values">Default Values</string>
+    <string name="enabled">开启</string>
+    <string name="default_values">默认值</string>
     <string name="slider_setting_value">%.0f%2$s</string>
     <string name="slider_setting_float_value">%.2f%2$s</string>
-    <string name="disc_number">Disc %1$d</string>
-    <string name="replug_gc_adapter">GameCube Adapter couldn\'t be opened. Please re-plug the device.</string>
-    <string name="disabled_gc_overlay_notice">The selected Gamecube控制器 is set to \"None\"</string>
-    <string name="ignore_warning_alert_messages">Ignore for this session</string>
+    <string name="disc_number">光盘 %1$d</string>
+    <string name="replug_gc_adapter">无法打开GameCube适配器。请重新插入设备。</string>
+    <string name="disabled_gc_overlay_notice">所选的Gamecube控制器已设为\"无\"</string>
+    <string name="ignore_warning_alert_messages">忽略此会话</string>
 
     <!-- UI CPU Core selection -->
-    <string name="jit_recompiler_x86">JIT Recompiler for x86–64 (recommended)</string>
-    <string name="jit_recompiler_arm64">JIT Recompiler for ARM64 (recommended)</string>
-    <string name="cached_interpreter_slower">Cached Interpreter (slower)</string>
-    <string name="cached_interpreter">Cached Interpreter</string>
-    <string name="interpreter_slowest">Interpreter (slowest)</string>
-    <string name="interpreter">Interpreter</string>
+    <string name="jit_recompiler_x86">x86–64的JIT重新编译程序（推荐）</string>
+    <string name="jit_recompiler_arm64">用于ARM64的JIT重新编译程序（推荐）</string>
+    <string name="cached_interpreter_slower">缓存解释器（较慢）</string>
+    <string name="cached_interpreter">缓存解释器</string>
+    <string name="interpreter_slowest">解释器（最慢）</string>
+    <string name="interpreter">解释器</string>
 
     <!-- DSP Emulation Engine -->
-    <string name="dsp_hle">DSP HLE (recommended)</string>
-    <string name="dsp_lle_recompiler">DSP LLE Recompiler (slow)</string>
-    <string name="dsp_lle_interpreter">DSP LLE Interpreter (very slow)</string>
+    <string name="dsp_hle">DSP HLE (推荐)</string>
+    <string name="dsp_lle_recompiler">DSP LLE重新编译程序 (慢)</string>
+    <string name="dsp_lle_interpreter">DSP LLE 解释器 (非常慢)</string>
 
     <!-- System Languages -->
-    <string name="language_english">English</string>
-    <string name="language_german">German</string>
-    <string name="language_french">French</string>
-    <string name="language_spanish">Spanish</string>
-    <string name="language_italian">Italian</string>
-    <string name="language_dutch">Dutch</string>
-    <string name="language_japanese">Japanese</string>
-    <string name="language_simplified_chinese">Simplified Chinese</string>
-    <string name="language_traditional_chinese">Traditional Chinese</string>
-    <string name="language_korean">Korean</string>
+    <string name="language_english">英语</string>
+    <string name="language_german">德语</string>
+    <string name="language_french">法语</string>
+    <string name="language_spanish">西班牙语</string>
+    <string name="language_italian">印度语</string>
+    <string name="language_dutch">荷兰语</string>
+    <string name="language_japanese">日语</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_traditional_chinese">繁体中文</string>
+    <string name="language_korean">韩语</string>
 
     <!-- Device selection -->
-    <string name="device_nothing">Nothing</string>
-    <string name="device_dummy">Dummy</string>
-    <string name="device_memory_card">Memory Card</string>
-    <string name="device_gci_folder">GCI Folder</string>
+    <string name="device_nothing">无</string>
+    <string name="device_dummy">虚拟的</string>
+    <string name="device_memory_card">内存卡</string>
+    <string name="device_gci_folder">GCI文件夹</string>
 
     <!-- Slot SP1 Device selection -->
-    <string name="broadband_adapter_xlink">Broadband Adapter (XLink Kai)</string>
-    <string name="broadband_adapter_hle">Broadband Adapter (HLE)</string>
+    <string name="broadband_adapter_xlink">宽带适配器 (XLink Kai)</string>
+    <string name="broadband_adapter_hle">宽带适配器 (HLE)</string>
 
     <!-- Sound Mode -->
-    <string name="sound_mode_mono">Mono</string>
-    <string name="sound_mode_stereo">Stereo</string>
-    <string name="sound_mode_surround">Surround</string>
+    <string name="sound_mode_mono">单声道</string>
+    <string name="sound_mode_stereo">双声道</string>
+    <string name="sound_mode_surround">环绕声</string>
 
     <!-- Sensor Bar Position -->
-    <string name="sensor_position_top">Top</string>
-    <string name="sensor_position_bottom">Bottom</string>
+    <string name="sensor_position_top">顶部</string>
+    <string name="sensor_position_bottom">底部</string>
 
     <!-- Log Verbosity selection based on LogLevel in Common/Logging/Log.h -->
     <string name="log_notice">Notice</string>
@@ -697,10 +695,10 @@ It can efficiently compress both junk data and encrypted Wii data.
     <!-- Video backend selection -->
     <string name="backend_opengl">OpenGL</string>
     <string name="backend_vulkan">Vulkan</string>
-    <string name="backend_software">Software</string>
+    <string name="backend_software">软件</string>
     <string name="backend_null">Null</string>
 
-    <!-- Wii 遥控器 插件s -->
+    <!-- Wii 遥控器 插件 -->
     <string name="extension_none">None</string>
     <string name="extension_nunchuk">Nunchuk</string>
     <string name="extension_classic">Classic</string>
@@ -709,32 +707,32 @@ It can efficiently compress both junk data and encrypted Wii data.
     <string name="extension_turntable">Turntable</string>
 
     <!-- Accuracy Preference -->
-    <string name="accuracy_fast">Fast</string>
-    <string name="accuracy_medium">Medium</string>
-    <string name="accuracy_safe">Safe</string>
+    <string name="accuracy_fast">快速</string>
+    <string name="accuracy_medium">中等</string>
+    <string name="accuracy_safe">安全</string>
 
     <!-- Shader Compilation Mode Preference -->
-    <string name="shader_compilation_specialized">Specialized (Default)</string>
-    <string name="shader_compilation_exclusive_ubershaders">Exclusive Ubershaders</string>
-    <string name="shader_compilation_hybrid_ubershaders">Hybrid Ubershaders</string>
-    <string name="shader_compilation_skip_drawing">Skip Drawing</string>
+    <string name="shader_compilation_specialized">专门化（默认）</string>
+    <string name="shader_compilation_exclusive_ubershaders">专用超着色器</string>
+    <string name="shader_compilation_hybrid_ubershaders">混合超着色器</string>
+    <string name="shader_compilation_skip_drawing">跳过绘制</string>
 
     <!-- Shader Compilation Mode Dynamic Descriptions -->
-    <string name="shader_compilation_specialized_description">Specialized (Default): Ubershaders are never used. Stuttering will occur during shader compilation, but GPU demands are low. Recommended for low-end hardware. If unsure, select this mode.</string>
-    <string name="shader_compilation_exclusive_ubershaders_description">Exclusive Ubershaders: Ubershaders will always be used. Provides a near stutter-free experience at the cost of very high GPU performance requirements. Don\'t use this unless you encountered stuttering with Hybrid Ubershaders and have a very powerful GPU.</string>
-    <string name="shader_compilation_hybrid_ubershaders_description">Hybrid Ubershaders: Ubershaders will be used to prevent stuttering during shader compilation, but specialized shaders will be used when they will not cause stuttering. In the best case it eliminates shader compilation stuttering while having minimal performance impact, but results depend on video driver behavior.</string>
-    <string name="shader_compilation_skip_drawing_description">Skip Drawing: Prevents shader compilation stuttering by not rendering waiting objects. Can work in scenarios where Ubershaders doesn\'t, at the cost of introducing visual glitches and broken effects. Not recommended, only use if the other options give poor results on your system.</string>
+    <string name="shader_compilation_specialized_description">专门化（默认）: 从不使用超着色器。着色器编译过程中会出现卡顿，但GPU需求很低。建议用于低端硬件。如果不确定，请选择此模式。</string>
+    <string name="shader_compilation_exclusive_ubershaders_description">专用超着色器: 将始终使用超着色器。以非常高的GPU性能要求为代价，提供近乎无卡顿的体验。不要使用这个，除非你遇到了混合超着色器的卡顿，并且有一个非常强大的GPU。</string>
+    <string name="shader_compilation_hybrid_ubershaders_description">混合超着色器: 混合超着色器将用于防止着色器编译过程中出现卡顿，但在不会导致卡顿的情况下，将使用专用着色器。在最好的情况下，它消除了着色器编译的断断续续，同时对性能的影响最小，但结果取决于视频驱动程序的行为。</string>
+    <string name="shader_compilation_skip_drawing_description">跳过绘制: 通过不渲染等待的对象来防止着色器编译断断续续。可以在超着色器无法工作的场景中工作，代价是引入视觉故障和破坏效果。不建议使用，仅当其他选项在您的系统上产生较差的结果时才使用。</string>
 
     <!-- Internal Resolution Preference -->
-    <string name="resolution_one_native">1x Native (640x528)</string>
-    <string name="resolution_two_native">2x Native (1280x1056) for 720p</string>
-    <string name="resolution_three_native">3x Native (1920x1584) for 1080p</string>
-    <string name="resolution_four_native">4x Native (2560x2112)</string>
-    <string name="resolution_five_native">5x Native (3200x2640)</string>
-    <string name="resolution_six_native">6x Native (3840x3168) for 4K</string>
+    <string name="resolution_one_native">1x 原生 (640x528)</string>
+    <string name="resolution_two_native">2x 原生 (1280x1056) for 720p</string>
+    <string name="resolution_three_native">3x 原生 (1920x1584) for 1080p</string>
+    <string name="resolution_four_native">4x 原生 (2560x2112)</string>
+    <string name="resolution_five_native">5x 原生 (3200x2640)</string>
+    <string name="resolution_six_native">6x 原生 (3840x3168) for 4K</string>
 
     <!-- Multiple preference -->
-    <string name="multiple_off">Off</string>
+    <string name="multiple_off">关闭</string>
     <string name="multiple_one">1x</string>
     <string name="multiple_two">2x</string>
     <string name="multiple_four">4x</string>
@@ -742,100 +740,100 @@ It can efficiently compress both junk data and encrypted Wii data.
     <string name="multiple_sixteen">16x</string>
 
     <!-- Texture Filtering Preference -->
-    <string name="filtering_default">Default</string>
-    <string name="filtering_nearest">Force Nearest</string>
-    <string name="filtering_linear">Force Linear</string>
+    <string name="filtering_default">默认</string>
+    <string name="filtering_nearest">强制邻近</string>
+    <string name="filtering_linear">强制线性</string>
 
     <!-- Stereoscopy Preference -->
-    <string name="stereoscopy_off">Off</string>
-    <string name="stereoscopy_side_by_side">Side-by-Side</string>
-    <string name="stereoscopy_top_and_bottom">Top-and-Bottom</string>
-    <string name="stereoscopy_anaglyph">Anaglyph</string>
+    <string name="stereoscopy_off">关闭</string>
+    <string name="stereoscopy_side_by_side">左右</string>
+    <string name="stereoscopy_top_and_bottom">上下</string>
+    <string name="stereoscopy_anaglyph">色差</string>
 
     <!-- Aspect Ratio Preference -->
-    <string name="aspect_ratio_auto">Auto</string>
-    <string name="aspect_ratio_force_sixteen_by_nine">Force 16:9</string>
-    <string name="aspect_ratio_force_four_by_three">Force 4:3</string>
-    <string name="aspect_ratio_stretch">Stretch to Window</string>
+    <string name="aspect_ratio_auto">自动</string>
+    <string name="aspect_ratio_force_sixteen_by_nine">强制16:9</string>
+    <string name="aspect_ratio_force_four_by_three">强制4:3</string>
+    <string name="aspect_ratio_stretch">拉伸全屏</string>
 
     <!-- Country Names -->
-    <string name="country_europe">Europe</string>
-    <string name="country_japan">Japan</string>
-    <string name="country_usa">USA</string>
-    <string name="country_australia">Australia</string>
-    <string name="country_france">France</string>
-    <string name="country_germany">Germany</string>
-    <string name="country_italy">Italy</string>
-    <string name="country_korea">Korea</string>
-    <string name="country_netherlands">Netherlands</string>
-    <string name="country_russia">Russia</string>
-    <string name="country_spain">Spain</string>
-    <string name="country_taiwan">Taiwan</string>
-    <string name="country_world">World</string>
-    <string name="country_unknown">Unknown</string>
+    <string name="country_europe">欧洲</string>
+    <string name="country_japan">日本</string>
+    <string name="country_usa">美国</string>
+    <string name="country_australia">澳大利亚</string>
+    <string name="country_france">法国</string>
+    <string name="country_germany">德国</string>
+    <string name="country_italy">意大利</string>
+    <string name="country_korea">韩国</string>
+    <string name="country_netherlands">荷兰</string>
+    <string name="country_russia">俄罗斯</string>
+    <string name="country_spain">西班牙</string>
+    <string name="country_taiwan">台湾</string>
+    <string name="country_world">世界</string>
+    <string name="country_unknown">未知</string>
 
     <!-- GameCube Gamepad Types -->
-    <string name="gcpad_disabled">None</string>
-    <string name="gcpad_emulated">Standard Controller</string>
-    <string name="gcpad_keyboard">Keyboard Controller</string>
-    <string name="gcpad_steering_wheel">Steering Wheel</string>
+    <string name="gcpad_disabled">无</string>
+    <string name="gcpad_emulated">标准控制器</string>
+    <string name="gcpad_keyboard">键盘控制器</string>
+    <string name="gcpad_steering_wheel">方向盘</string>
     <string name="gcpad_dance_mat">Dance Mat</string>
     <string name="gcpad_taru_konga">DK Bongos</string>
-    <string name="gcpad_gc_adapter">GameCube Adapter</string>
+    <string name="gcpad_gc_adapter">GameCube适配器</string>
 
     <!-- Wiimote Types -->
-    <string name="wiimote_disabled">None</string>
-    <string name="wiimote_emulated">Emulated Wii 遥控器</string>
-    <string name="wiimote_real">Real Wii 遥控器 (DolphinBar required)</string>
+    <string name="wiimote_disabled">无</string>
+    <string name="wiimote_emulated">模拟Wii 遥控器</string>
+    <string name="wiimote_real">真实Wii 遥控器 (需要DolphinBar)</string>
 
     <!-- Gamepad Controls -->
-    <string name="gamepad_start">Start</string>
+    <string name="gamepad_start">Start键</string>
     <string name="gamepad_d_pad">D-Pad</string>
-    <string name="gamepad_main_stick">Main Stick</string>
-    <string name="gamepad_c_stick">C Stick</string>
+    <string name="gamepad_main_stick">主摇杆</string>
+    <string name="gamepad_c_stick">C摇杆</string>
     <string name="gamepad_home">Home</string>
     <string name="gamepad_nunchuk_stick">Nunchuk Stick</string>
-    <string name="gamepad_left_stick">Left Stick</string>
-    <string name="gamepad_right_stick">Right Stick</string>
+    <string name="gamepad_left_stick">左摇杆</string>
+    <string name="gamepad_right_stick">右摇杆</string>
 
     <!-- IR Modes -->
-    <string name="ir_disabled">Disabled</string>
-    <string name="ir_follow">Follow</string>
-    <string name="ir_drag">Drag</string>
+    <string name="ir_disabled">关闭</string>
+    <string name="ir_follow">跟随</string>
+    <string name="ir_drag">拖拽</string>
 
     <!-- Double Tap Buttons -->
-    <string name="double_tap_a">Button A</string>
-    <string name="double_tap_b">Button B</string>
-    <string name="double_tap_2">Button 2</string>
+    <string name="double_tap_a">按钮A</string>
+    <string name="double_tap_b">按钮B</string>
+    <string name="double_tap_2">按钮2</string>
     <string name="double_tap_classic_a">Classic A</string>
 
     <!-- Orientations -->
-    <string name="orientation_landscape">Landscape</string>
-    <string name="orientation_landscape_reverse">Landscape (reverse)</string>
-    <string name="orientation_portrait">Portrait</string>
-    <string name="orientation_auto">Auto</string>
+    <string name="orientation_landscape">横向</string>
+    <string name="orientation_landscape_reverse">横向 (反转)</string>
+    <string name="orientation_portrait">竖向</string>
+    <string name="orientation_auto">自动</string>
 
     <!-- Themes -->
-    <string name="theme_default">Default</string>
+    <string name="theme_default">默认</string>
     <string name="theme_material_you">Material You</string>
     <string name="theme_material_default">Material Default</string>
-    <string name="theme_green">Green</string>
-    <string name="theme_pink">Pink</string>
+    <string name="theme_green">绿色</string>
+    <string name="theme_pink">粉色</string>
 
     <!-- Theme Modes -->
-    <string name="theme_mode_follow_system">Follow System</string>
-    <string name="theme_mode_light">Light</string>
-    <string name="theme_mode_dark">Dark</string>
+    <string name="theme_mode_follow_system">跟随系统</string>
+    <string name="theme_mode_light">亮主题</string>
+    <string name="theme_mode_dark">暗主题</string>
 
     <!-- Synchronize GPU Thread Options -->
-    <string name="sync_gpu_never">Never</string>
-    <string name="sync_gpu_idle">On Idle Skipping</string>
-    <string name="sync_gpu_always">Always</string>
+    <string name="sync_gpu_never">从不</string>
+    <string name="sync_gpu_idle">空闲时跳过</string>
+    <string name="sync_gpu_always">总是</string>
 
     <!-- Motion Control Options -->
-    <string name="motion_device_with_pointer">Use Device Sensors (With Pointer Emulation)</string>
-    <string name="motion_device_without_pointer">Use Device Sensors (Without Pointer Emulation)</string>
-    <string name="motion_no_device">Don\'t Use Device Sensors</string>
+    <string name="motion_device_with_pointer">使用设备传感器（带指针仿真）</string>
+    <string name="motion_device_without_pointer">使用设备传感器（无指针仿真）</string>
+    <string name="motion_no_device">不要使用设备传感器</string>
 
     <!-- Block sizes -->
     <string name="block_size_32_kib">32 KiB</string>
@@ -847,13 +845,13 @@ It can efficiently compress both junk data and encrypted Wii data.
     <string name="block_size_2_mib">2 MiB</string>
 
     <!-- Compression Options -->
-    <string name="compression_none">No Compression</string>
-    <string name="compression_purge">Purge</string>
+    <string name="compression_none">无压缩</string>
+    <string name="compression_purge">清除</string>
     <string name="compression_deflate">Deflate</string>
-    <string name="compression_bzip2">bzip2 (slow)</string>
-    <string name="compression_lzma">LZMA (slow)</string>
-    <string name="compression_lzma2">LZMA2 (slow)</string>
-    <string name="compression_zstandard">Zstandard (recommended)</string>
+    <string name="compression_bzip2">bzip2 (慢)</string>
+    <string name="compression_lzma">LZMA (慢)</string>
+    <string name="compression_lzma2">LZMA2 (慢)</string>
+    <string name="compression_zstandard">Zstandard (推荐)</string>
 
     <!-- About dialog -->
     <string name="about_dolphin">Dolphin</string>
@@ -861,34 +859,34 @@ It can efficiently compress both junk data and encrypted Wii data.
     <string name="about_dolphin_image">Dolphin logo</string>
     <string name="about_branch">Branch:\n%s</string>
     <string name="about_revision">Revision:\n%s</string>
-    <string name="about_dolphin_description">Dolphin is a free and open-source GameCube and Wii emulator.\n\nThis software should not be used to play games you do not legally own.</string>
+    <string name="about_dolphin_description">Dolphin是一款免费开源的GameCube和Wii模拟器。\n\n此软件不应用于玩您不合法拥有的游戏。</string>
     <string name="about_website"><a href="https://dolphin-emu.org/">Website</a></string>
     <string name="about_github"><a href="https://github.com/dolphin-emu/dolphin">GitHub</a></string>
     <string name="about_support"><a href="https://forums.dolphin-emu.org/">Support</a></string>
     <string name="about_copyright_warning">\u00A9 2003–2015+ Dolphin Team. \u201cGameCube\u201d and \u201cWii\u201d are trademarks of Nintendo. Dolphin is not affiliated with Nintendo in any way.</string>
-    <string name="system_driver">System driver</string>
-    <string name="system_driver_desc">The GPU driver that is part of the OS.</string>
+    <string name="system_driver">System驱动</string>
+    <string name="system_driver_desc">作为操作系统一部分的GPU驱动程序。</string>
 
     <!-- Custom GPU drivers -->
-    <string name="gpu_driver_dialog_title">Select the GPU driver for Dolphin</string>
-    <string name="gpu_driver_dialog_system">Default</string>
-    <string name="gpu_driver_dialog_install">Install driver</string>
-    <string name="gpu_driver_dialog_uninstall_done">Successfully switched to the system driver</string>
-    <string name="gpu_driver_submenu">GPU Driver</string>
-    <string name="gpu_driver_install_inprogress">Installing the GPU driver…</string>
-    <string name="gpu_driver_install_success">GPU driver installed successfully</string>
-    <string name="gpu_driver_install_invalid_archive">Failed to unzip the provided driver package</string>
-    <string name="gpu_driver_install_missing_metadata">The supplied driver package is invalid due to missing metadata.</string>
-    <string name="gpu_driver_install_invalid_metadata">The supplied driver package contains invalid metadata, it may be corrupted.</string>
-    <string name="gpu_driver_install_unsupported_android_version">Your device doesn\'t meet the minimum Android version requirements for the supplied driver.</string>
-    <string name="gpu_driver_install_already_installed">The supplied driver package is already installed.</string>
-    <string name="gpu_driver_install_file_not_found">The selected file could not be found or accessed.</string>
+    <string name="gpu_driver_dialog_title">选择Dolphin的GPU驱动</string>
+    <string name="gpu_driver_dialog_system">默认</string>
+    <string name="gpu_driver_dialog_install">安装驱动</string>
+    <string name="gpu_driver_dialog_uninstall_done">已成功切换到系统驱动程序</string>
+    <string name="gpu_driver_submenu">GPU驱动</string>
+    <string name="gpu_driver_install_inprogress">正在安装GPU驱动程序…</string>
+    <string name="gpu_driver_install_success">GPU驱动程序安装成功</string>
+    <string name="gpu_driver_install_invalid_archive">无法解压缩提供的驱动程序包</string>
+    <string name="gpu_driver_install_missing_metadata">由于缺少元数据，提供的驱动程序包无效。</string>
+    <string name="gpu_driver_install_invalid_metadata">提供的驱动程序包包含无效的元数据，可能已损坏。</string>
+    <string name="gpu_driver_install_unsupported_android_version">您的设备不符合所提供驱动程序的最低安卓版本要求。</string>
+    <string name="gpu_driver_install_already_installed">提供的驱动程序包已安装。</string>
+    <string name="gpu_driver_install_file_not_found">无法找到或访问所选文件。</string>
 
     <!-- Emulated USB Devices -->
-    <string name="emulated_usb_devices">Emulated USB Devices</string>
+    <string name="emulated_usb_devices">模拟USB设备</string>
     <string name="emulate_skylander_portal">Skylanders Portal</string>
-    <string name="skylanders_manager">Skylanders Manager</string>
-    <string name="create_skylander_title">Create Skylander</string>
+    <string name="skylanders_manager">Skylanders管理器</string>
+    <string name="create_skylander_title">创建Skylander</string>
     <string name="skylander_label">Skylander</string>
     <string name="skylander_slot">Slot %1$d</string>
     <string name="skylander_id">ID</string>
