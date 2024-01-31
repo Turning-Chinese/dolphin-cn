@@ -29,8 +29,6 @@ jobs:
       run: git submodule update --init --recursive
     - name: Grant execute permission for gradlew
       run: chmod +x ./Source/Android/gradlew
-    - name: Accept the SDK license
-      run: sdkmanager --licenses
     - name: Build with Gradle
       run: cd Source/Android && ./gradlew assemble
     - name: Sign Release APK
@@ -51,8 +49,6 @@ jobs:
         keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
         keyPassword: ${{ secrets.KEY_PASSWORD }}
         zipAlign: true
-    - name: Delete Unsign APK
-      run: rm -rf Source/Android/app/build/outputs/apk/release/app-release-unsigned.apk && rm -rf Source/Android/app/build/outputs/apk/debug/app-debug.apk
     - name: Upload a Release Artifact
       uses: actions/upload-artifact@v4.3.0
       with:
@@ -71,12 +67,5 @@ jobs:
     # The level of compression for Zlib to be applied to the artifact archive. The value can range from 0 to 9: - 0: No compression - 1: Best speed - 6: Default compression (same as GNU Gzip) - 9: Best compression Higher levels will result in better compression, but will take longer to complete. For large files that are not easily compressed, a value of 0 is recommended for significantly faster uploads.
 
         compression-level: 9 # optional, default is 6
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v4.1.1
-      with:
-    # The repository owner and the repository name joined together by "/". If github-token is specified, this is the repository that artifacts will be downloaded from.
-        repository: ${{ github.repository }} # optional, default is ${{ github.repository }}
-    # The id of the workflow run where the desired download artifact was uploaded from. If github-token is specified, this is the run that artifacts will be downloaded from.
-        run-id: ${{ github.run_id }}
           
           
