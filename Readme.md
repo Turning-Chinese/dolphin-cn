@@ -1,42 +1,40 @@
-# Dolphin - A GameCube and Wii Emulator
+# Dolphin - Gamcube和Wii的模拟器
 
-[Homepage](https://dolphin-emu.org/) | [Project Site](https://github.com/dolphin-emu/dolphin) | [Buildbot](https://dolphin.ci/) | [Forums](https://forums.dolphin-emu.org/) | [Wiki](https://wiki.dolphin-emu.org/) | [GitHub Wiki](https://github.com/dolphin-emu/dolphin/wiki) | [Issue Tracker](https://bugs.dolphin-emu.org/projects/emulator/issues) | [Coding Style](https://github.com/dolphin-emu/dolphin/blob/master/Contributing.md) | [Transifex Page](https://app.transifex.com/delroth/dolphin-emu/dashboard/)
+[首页](https://dolphin-emu.org/) | [项目站点](https://github.com/dolphin-emu/dolphin) | [Buildbot](https://dolphin.ci/) | [论坛](https://forums.dolphin-emu.org/) | [Wiki](https://wiki.dolphin-emu.org/) | [GitHub Wiki](https://github.com/dolphin-emu/dolphin/wiki) | [Issue Tracker](https://bugs.dolphin-emu.org/projects/emulator/issues) | [Coding Style](https://github.com/dolphin-emu/dolphin/blob/master/Contributing.md) | [Transifex Page](https://app.transifex.com/delroth/dolphin-emu/dashboard/)
 
-Dolphin is an emulator for running GameCube and Wii games on Windows,
-Linux, macOS, and recent Android devices. It's licensed under the terms
-of the GNU General Public License, version 2 or later (GPLv2+).
+Dolphin是一个在Windows，Linux，MacOS还有Android设备上面运行Gamecube和Wii游戏的模拟器 许可条款是GNU General Public License, version 2 or later (GPLv2+)。
 
-Please read the [FAQ](https://dolphin-emu.org/docs/faq/) before using Dolphin.
+请在使用Dolphin前阅读[FAQ](https://dolphin-emu.org/docs/faq/)
 
-## System Requirements
+## 系统要求
 
-### Desktop
+### 桌面
 
 * OS
-    * Windows (10 or higher).
+    * Windows 10及以上
     * Linux.
-    * macOS (10.15 Catalina or higher).
-    * Unix-like systems other than Linux are not officially supported but might work.
-* Processor
-    * A CPU with SSE2 support.
-    * A modern CPU (3 GHz and Dual Core, not older than 2008) is highly recommended.
-* Graphics
-    * A reasonably modern graphics card (Direct3D 11.1 / OpenGL 3.3).
-    * A graphics card that supports Direct3D 11.1 / OpenGL 4.4 is recommended.
+    * macOS 10.15 Catalina及以上
+    * 我们不敢保证此模拟器可以在类Unix系统上面正常运行
+* 处理器
+    * 支持SSE2的CPU
+    * 推荐的CPU：频率至少3GHz，多核心，晚于2008生产
+* 显卡
+    * 最低要求：至少支持Direct3D 11.1/OpenGL 3.3
+    * 推荐：支持Direct3D 11.1 / OpenGL 4.4
 
-### Android
+### 安卓
 
 * OS
-    * Android (5.0 Lollipop or higher).
-* Processor
-    * A processor with support for 64-bit applications (either ARMv8 or x86-64).
-* Graphics
-    * A graphics processor that supports OpenGL ES 3.0 or higher. Performance varies heavily with [driver quality](https://dolphin-emu.org/blog/2013/09/26/dolphin-emulator-and-opengl-drivers-hall-fameshame/).
-    * A graphics processor that supports standard desktop OpenGL features is recommended for best performance.
+    * Android 5.0及以上
+* 处理器
+    * 支持64位应用程序的处理器（架构可以是ARMv8或x86_64）
+* 显卡
+    * 最低要求：支持OpenGL ES 3.0及以上版本。性能受[驱动质量](https://dolphin-emu.org/blog/2013/09/26/dolphin-emulator-and-opengl-drivers-hall-fameshame/)的影响很大。
+    * 推荐：支持桌面端完整OpenGL功能（可提供最佳的性能）
 
-Dolphin can only be installed on devices that satisfy the above requirements. Attempting to install on an unsupported device will fail and display an error message.
+Dolphin只能被安装在满足上述条件的设备上。若尝试在一个不受支持的设备上安装Dolphin，你将会无法启动它，它会显示一个错误窗口
 
-## Building for Windows
+## 构建Windows端
 
 Use the solution file `Source/dolphin-emu.sln` to build Dolphin on Windows.
 Dolphin targets the latest MSVC shipped with Visual Studio or Build Tools.
@@ -52,7 +50,7 @@ git submodule update --init --recursive
 The "Release" solution configuration includes performance optimizations for the best user experience but complicates debugging Dolphin.
 The "Debug" solution configuration is significantly slower, more verbose and less permissive but makes debugging Dolphin easier.
 
-## Building for Linux and macOS
+## 构建Linux and macOS端
 
 Dolphin requires [CMake](https://cmake.org/) for systems other than Windows. 
 You need a recent version of GCC or Clang with decent c++20 support. CMake will
@@ -121,7 +119,7 @@ Or useful for having multiple distinct Dolphin setups for testing/development/TA
 5. `cp -r ../Data/Sys/ Binaries/`
 6. `touch Binaries/portable.txt`
 
-## Building for Android
+## 构建Android端
 
 These instructions assume familiarity with Android development. If you do not have an
 Android dev environment set up, see [AndroidSetup.md](AndroidSetup.md).
