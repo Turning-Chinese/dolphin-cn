@@ -1,0 +1,27 @@
+name: "Auto Sync Upstream Repository"
+
+on:
+  schedule:
+    - cron: '0 7,21 * * *'
+    # Runs at 07:00 and 21:00 everyday
+  workflow_dispatch:
+jobs:
+  sync_latest_from_upstream:
+    runs-on: ubuntu-latest
+    name: Sync Upstream repository
+
+    steps:
+    # Step 1: run a standard checkout action, provided by github
+    - name: Checkout target repo
+      uses: actions/checkout@v3
+    # Step 2: run the sync action
+    - name: Sync upstream changes
+      id: sync
+      uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
+      with:
+        target_sync_branch: master
+        target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+        upstream_sync_branch: master
+        upstream_sync_repo: dolphin-emu/dolphin
+        # Set test_mode true to run tests instead of the true action!!
+        test_mode: false
