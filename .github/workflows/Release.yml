@@ -2,6 +2,8 @@ name: Android Release
 
 on:
     workflow_dispatch:
+    schedule:
+        - cron: '0 0 * * 6'
 
 jobs:
   build:
@@ -25,8 +27,6 @@ jobs:
       run: git submodule update --init --recursive
     - name: Grant execute permission for gradlew
       run: chmod +x ./Source/Android/gradlew
-    - name: Accept the SDK license
-      run: sdkmanager --licenses
     - name: Setting Version Name
       run: sed -i '1,90s/getGitVersion()/\"1.0.${{ github.run_number }}\"/g' ./Source/Android/app/build.gradle.kts
     - name: Build with Gradle
@@ -40,21 +40,12 @@ jobs:
         keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
         keyPassword: ${{ secrets.KEY_PASSWORD }}
         zipAlign: true
-    - name: Sign Debug APK
-      uses: kevin-david/zipalign-sign-android-release@v1.1
-      with: 
-        releaseDirectory: Source/Android/app/build/outputs/apk/debug
-        signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-        alias: ${{ secrets.ALIAS }}
-        keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-        keyPassword: ${{ secrets.KEY_PASSWORD }}
-        zipAlign: true
-    - name: Delete Unsign APK
-      run: rm -rf Source/Android/app/build/outputs/apk/release/app-release-unsigned.apk && rm -rf Source/Android/app/build/outputs/apk/debug/app-debug.apk
+    - name: Rename APK
+      run: mv ./Source/Android/app/build/outputs/apk/release/app-release-unsigned-signed.apk "./Source/Android/app/build/outputs/apk/release/Dolphin Emulator v1.0.${{ github.run_number }}.apk"
     - name: Release APK
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "Source/Android/app/build/outputs/apk/release/app-release-unsigned-signed.apk"
+        artifacts: "Source/Android/app/build/outputs/apk/release/Dolphin Emulator v1.0.${{ github.run_number }}.apk"
         allowUpdates: true
         body: "若要查看中文版更新日志，请转到www.example.com"
         tag: 1.0.${{ github.run_number }}
