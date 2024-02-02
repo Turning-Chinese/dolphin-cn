@@ -4,6 +4,9 @@ on:
   push:
   pull_request:
   workflow_dispatch:
+  workflow_run: 
+    workflows: [ Auto Sync Upstream Repository ]
+    types: [ completed ]
 
 jobs:
   build:
